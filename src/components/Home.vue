@@ -125,18 +125,22 @@ onUnmounted(() => {
 <style>
 .background-heart {
   position: fixed;
-  width: 300px;
-  height: 300px;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 5px;
   background-image: url('/src/assets/heart.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   opacity: 1;
   z-index: -1;
+  filter: invert(100%);
+  opacity: .6;
 }
 
 .text-container {
-  width: 70vw;
+  width: 80vw;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
